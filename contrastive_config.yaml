@@ -1,0 +1,21 @@
+data:
+    data_root: /
+    data_spreadsheet: spreadsheets/
+    labels: ['idh', 'codel', 'atrx']
+    train_centers: ['UM']
+    transform_strength: strong # strong or weak
+    image_size: 300
+model:
+    vision_backbone: resnet # resnet, inception, resnext, vit_s, vit_b, vit_l
+    classifier: linear # linear, rnn, tran
+    pretrained_vision_model: '' # path to pretrained vision model
+    input_size: 2048
+    projector_dim: 128
+training:
+    batch_size: 256
+    label_weights: {'idh': 1, 'codel': 1, 'atrx': 1}
+    n_epochs: 50
+    iters: 500
+    lr: 0.0001
+    weight_decay: 0.01
+    temp: 0.07

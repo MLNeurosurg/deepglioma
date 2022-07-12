@@ -1,0 +1,13 @@
+data:
+    data_spreadsheet: 'genetic_data.xlsx'
+    mutations: ['idh', 'codel', 'atrx', 'p53', 'mgmt', 'egfr', 'cic',
+    'tert', 'fubp1', 'pik3ca', 'cdkn', 'pten', 'nf1']
+model:
+    model_type: 'gene2vec' # 'glove' or 'gene2vec'
+    embedding_dim: 2048
+training:
+    batch_size: 60
+    n_epochs: 10000
+    lr: 0.00005
+    x_max: 100
+    alpha: 0.75
