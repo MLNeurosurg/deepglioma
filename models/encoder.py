@@ -3,7 +3,6 @@
 import torch
 import torch.nn as nn
 import torchvision.models as models
-from .utils import freeze_weights, load_model
 from vit_pytorch import ViT
 
 
