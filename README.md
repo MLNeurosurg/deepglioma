@@ -2,7 +2,7 @@
 
 [**arXiv**](https://arxiv.org/abs/2206.08439) / [**interactive website**](https://deepglioma.mlins.org) / [**MLiNS Lab**](https://mlins.org)
 
-Code repository to perform diffuse glioma molecular classification using stimulated Raman histology (SRH) and deep neural networks. 
+Code repository for our paper 'AI-based molecular classification of diffuse gliomas using rapid, label-free, optical imaging'. We use deep learning perform diffuse glioma molecular classification using stimulated Raman histology (SRH) and deep neural networks. 
 
 
 ### Abstract
@@ -11,7 +11,6 @@ Molecular classification has transformed the management of brain tumors by enabl
 ### TL;DR
 *Tumor images in >> **DeepGlioma** >> Tumor genetics out* (end-to-end: ~2 mins)
 
-© This code is made available for non-commercial academic purposes. Imaging and clinical information for this project was collected with IRB approval (HUM00083059) and is protected under HIPAA. Representative images and predictions can be found at [**deepglioma.mlins.org**](https://deepglioma.mlins.org).
 
 # Workflow
 ![DeepGlioma Workflow](/figures/Figure_1_workflow-01.png)
@@ -102,6 +101,9 @@ patient representations (i.e. average patch location) from the prospective clini
 Representations are labeled according to their IDH subgroup and diffuse glioma molecular
 subgroup. Our patch contrastive learning encourages the SRH encoder to learn representa-
 tions that are uniformily distributed on the unit hypersphere.
+
+
+© This code is made available for non-commercial academic purposes. Imaging and clinical information for this project was collected with IRB approval (HUM00083059) and is protected under HIPAA. Representative images and predictions can be found at [**deepglioma.mlins.org**](https://deepglioma.mlins.org).
 
 
 ## License Information

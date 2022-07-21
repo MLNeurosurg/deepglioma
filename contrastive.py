@@ -1,5 +1,5 @@
 """Module for training SRH vision encoder using weakly-supervised, patch-based, 
-mulit-label contrastive learning, or patchcon. 
+multi-label contrastive learning, or patchcon. 
 """
 
 import datetime
