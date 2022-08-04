@@ -74,17 +74,17 @@ print(gen_labels)
 # load validation data
 if config_dict['validation']['val_type'] == 'easy':
     validation_cases = [
-        "NIO_UM_072", "NIO_UM_158", "NIO_UM_298", "NIO_UM_318", "NIO_UM_492",
-        "NIO_UM_503", "NIO_UM_575", "NIO_UM_655"
+        "NIO_1", "NIO_2", "NIO_3", "NIO_4", "NIO_5",
+        "NIO_6", "NIO_7", "NIO_8"
     ]
 if config_dict['validation']['val_type'] == 'hard':
     validation_cases = [
-        'NIO_UM_513', 'NIO_UM_644', 'NIO_UM_744', 'NIO_UM_747', 'NIO_UM_824',
-        'NIO_UM_864', 'NIO_UM_883', 'NIO_UM_929'
+        'NIO_9', 'NIO_10', 'NIO_10', 'NIO_11', 'NIO_12',
+        'NIO_13', 'NIO_14', 'NIO_15'
     ]
 if config_dict['validation']['val_type'] == 'random':
     validation_cases = gen_labels.groupby("idh").sample(
-        n=10, random_state=config_dict['validation']
+        n=8, random_state=config_dict['validation']
         ['random_seed'])['dbcase'].tolist()
 if config_dict['validation']['val_type'] == None:
     validation_cases = []
