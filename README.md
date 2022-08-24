@@ -9,7 +9,7 @@ Code repository for our paper 'AI-based molecular classification of diffuse glio
 Molecular classification has transformed the management of brain tumors by enabling more accurate prognostication and personalized treatment. Access to timely molecular diagnostic testing for brain tumor patients is limited, complicating surgical and adjuvant treatment and obstructing clinical trial enrollment. We developed a rapid (<90 seconds), AI-based diagnostic screening system that can provide molecular classification of diffuse gliomas and report its use in a prospective, multicenter, international testing cohort of diffuse glioma patients (N = 153). By combining stimulated Raman histology (SRH), a rapid, label-free, non-consumptive, optical imaging method, and deep learning-based image classification, we can predict the molecular features used by the World Health Organization (WHO) to define the adult-type diffuse glioma taxonomy. We developed a multimodal training strategy that uses both SRH images and large-scale, public diffuse glioma genomic data to achieve optimal image-based molecular classification performance. Using this system, called DeepGlioma, we were able to achieve an average molecular genetic classification accuracy of 93.2% and identify the correct diffuse glioma molecular subgroup with 91.5% accuracy. Our results represent how artificial intelligence and optical histology can be used to provide a rapid and scalable alternative to wet lab methods for the molecular diagnosis of brain tumor patients.
 
 ### TL;DR
-*Image tumor with **SRH** >> tumor images in >> **DeepGlioma** >> Tumor genetics out* (end-to-end: ~2 mins)
+*Image tumor with **SRH** >> Images in >> **DeepGlioma** >> Tumor genetics out* (end-to-end: ~2 mins)
 
 
 # Workflow
