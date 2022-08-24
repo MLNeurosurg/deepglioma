@@ -70,7 +70,7 @@ def run_epoch(model,
         mask = batch['mask'].float()
         unk_mask = custom_replace(mask, 1, 0, 0)
         mask_in = mask.clone()
-        
+
         # mask for missing labels, PRESENT VALUES ARE 1, MISSING VALUES 0
         missing_mask = custom_mask_missing(labels)
 
